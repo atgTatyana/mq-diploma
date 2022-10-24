@@ -229,14 +229,15 @@ body {
 }
 
 .card__title {
+  max-width: 276px;
   margin: 0 0 30px 0;
   font-size: 16px;
   line-height: 1.25;
   text-transform: uppercase;
 }
 
-.span-mobile, .span-mobile-change {
-  display: block;
+.card__title-first {
+  max-width: 200px;
 }
 
 .card__link {
@@ -524,7 +525,7 @@ body {
   width: 100%;
   object-fit: cover;
   min-height: 284px;
-  /* background-color: lightgray; */
+  background-color: lightgray; 
 }
 
 .product__content {
@@ -682,20 +683,25 @@ body {
   z-index: 3;
 }
 
+.white {
+  background: #ffffff;
+}
+
 .popup__content {
   position: relative;
   z-index: 4;
   max-width: 330px;
   width: 91.7vw;
   margin: 0 auto;
-  background: #ffffff;
+  background: transparent;
+  /* background: #ffffff; */
   box-sizing: border-box;
 }
 
 .popup__close {
   width: 26px;
   position: absolute;
-  top: -32px;
+  top: -56px;             /* -32px было без обертки .white */
   right: 0;
   border: 0;
   cursor: pointer;
@@ -802,6 +808,17 @@ body {
   font-size: 15.7px;
 }
 
+@media (max-height: 610px) {
+  .popup {
+    align-items: start;
+  }
+
+  .popup__close {
+    top: -19px;
+    right: -32px;
+  }
+}
+
 @media (max-width: 640px) and (orientation: landscape){
   .trend-cards {
     display: flex;
@@ -829,14 +846,6 @@ body {
     margin: 0 0 31px 0;
     font-size: 17px;
     line-height: 1.29;
-  }
-
-  .span-mobile-change {
-    display: inline;
-  }
-
-  .span-tablet {
-    display: block;
   }
 }
 
@@ -910,14 +919,6 @@ body {
     margin: 0 0 31px 0;
     font-size: 17px;
     line-height: 1.29;
-  }
-
-  .span-mobile-change {
-    display: inline;
-  }
-
-  .span-tablet {
-    display: block;
   }
 
   .page {
@@ -1058,7 +1059,7 @@ body {
   }
 
   .popup__close {
-    top: -36px;
+    top: -84px;           /* -36px было без обертки .white */
   }
 
   .popup__title {
@@ -1089,6 +1090,17 @@ body {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1199px) and (max-height: 665px) {
+  .popup {
+    align-items: start;
+  }
+
+  .popup__close {
+    top: -42px;
+    right: -32px;
+  }
+}
+
 @media (min-width: 641px) and (orientation: landscape) {
   .trend-cards {
     flex-wrap: nowrap;
@@ -1107,6 +1119,11 @@ body {
     margin: 0 0 36px 0;
     font-size: 20px;
     line-height: 1.2;
+    max-width: 293px;
+  }
+
+  .card__title-first {
+    max-width: 237px;
   }
 }
 
@@ -1189,6 +1206,11 @@ body {
     margin: 0 0 36px 0;
     font-size: 20px;
     line-height: 1.2;
+    max-width: 293px;
+  }
+
+  .card__title-first {
+    max-width: 237px;
   }
 
   .page {
@@ -1296,7 +1318,7 @@ body {
   }
 
   .popup__close {
-    top: -26px;
+    top: -74px;           /* -26px было без обертки .white */
     width: 18px;
   }
 
@@ -1331,3 +1353,13 @@ body {
   }
 }
 
+@media (min-width: 1200px) and (max-height: 640px) {
+  .popup {
+    align-items: start;
+  }
+
+  .popup__close {
+    top: -42px;
+    right: -26px;
+  }
+}
