@@ -60,9 +60,9 @@
                <a href="#0" class="list__link list__link-first">interior</a>
              </li>
            </ul>
-           <h3 class="card__title">
+           <h3 class="card__title card__title-first">
              <a href="#0" class="card__link card__link-first">
-               сейчас в тренде: сад <span class="span-mobile">на подоконнике</span>
+              сейчас в тренде: сад на подоконнике
              </a>
            </h3>
         </div>
@@ -76,8 +76,8 @@
             </li>
           </ul>
           <h3 class="card__title">
-            <a href="#0" class="card__link">сыры на красивых
-              <span class="span-tablet">картинках из интернета: </span>какие они на вкус?
+            <a href="#0" class="card__link">
+              сыры на красивых картинках из интернета: какие они на вкус?
             </a>
           </h3>
         </div>
@@ -94,10 +94,8 @@
             </li>
           </ul>
           <h3 class="card__title">
-            <a href="#0" class="card__link">собираемся в первый
-              <span class="span-tablet">поход
-                <span class="span-mobile-change">в горы</span>
-              </span>
+            <a href="#0" class="card__link">
+              собираемся в первый поход в горы
             </a>
           </h3>
         </div>
@@ -115,7 +113,7 @@
           </ul>
           <h3 class="card__title">
             <a href="#0" class="card__link">
-              сейчас в тренде: сколько <span class="span-mobile">витамина с в лимонах?</span>
+              сейчас в тренде: сколько витамина с в лимонах?
             </a>
           </h3>
         </div>
@@ -543,46 +541,49 @@
   </div>
 
   <section class="popup hidden">
-    <div class="popup__content">
-      <button class="popup__close">
-        <img class="popup__close-img" src="svg/form-x.svg" alt="кнопка закрытия окна">
-      </button>
-
-      <h2 class="section__title popup__title">
-        <a href="#0" class="section__link">ваш фидбек</a>
-      </h2>
-
-      <form class="popup__form" action="">
-        <label class="popup__row">
-          <span class="popup__text popup__text-first">Как часто вы заходите на сайт?</span>
-          <select class="popup__field">
-            <option selected>Почти каждый день</option>
-            <option>Раз в несколько дней</option>
-            <option>Раз в несколько недель</option>
-            <option>Несколько раз в год</option>
-          </select>
-        </label>
-
-        <div class="popup__row">
-          <span class="popup__text">Вы подписаны на e-mail рассылку?</span>
-          <label class="radio-group">
-            <input class="radio-group__control" type="radio" name="e-mail" checked>
-            <span class="radio-group__text">Да</span>
+    <div class="white">
+      <div class="popup__content">
+        <button class="popup__close">
+          <img class="popup__close-img" src="svg/form-x.svg" alt="кнопка закрытия окна">
+        </button>
+  
+        <h2 class="section__title popup__title">
+          <a href="#0" class="section__link">ваш фидбек</a>
+        </h2>
+  
+        <form class="popup__form" action="">
+          <label class="popup__row">
+            <span class="popup__text popup__text-first">Как часто вы заходите на сайт?</span>
+            <select class="popup__field">
+              <option selected>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
           </label>
-          <label class="radio-group radio-group-secondary">
-            <input class="radio-group__control" type="radio" name="e-mail">
-            <span class="radio-group__text">Нет</span>
+  
+          <div class="popup__row">
+            <span class="popup__text">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio-group">
+              <input class="radio-group__control" type="radio" name="e-mail" checked>
+              <span class="radio-group__text">Да</span>
+            </label>
+            <label class="radio-group radio-group-secondary">
+              <input class="radio-group__control" type="radio" name="e-mail">
+              <span class="radio-group__text">Нет</span>
+            </label>
+          </div>
+  
+          <label class="popup__row">
+            <span class="popup__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="popup__field popup__textarea" placeholder="Может, больше рецептов?"></textarea>
           </label>
-        </div>
-
-        <label class="popup__row">
-          <span class="popup__text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-          <textarea class="popup__field popup__textarea" placeholder="Может, больше рецептов?"></textarea>
-        </label>
-
-        <button class="button popup__button">отправить</button>
-      </form>
+  
+          <button class="button popup__button">отправить</button>
+        </form>
+      </div>
     </div>
+    
   </section>
 
 </body>
