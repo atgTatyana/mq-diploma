@@ -519,8 +519,11 @@ body {
   margin-top: 0;
 }
 
-.product__img {
+.img-padding {                /* чтобы (при незагрузке img) серого фона на падингах не было */
   padding: 0 25px 0 21px;
+}
+
+.product__img {
   box-sizing: border-box;
   width: 100%;
   object-fit: cover;
